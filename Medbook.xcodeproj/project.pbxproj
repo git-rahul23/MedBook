@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDBC16562B30E5EF00A82D14 /* MedbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16552B30E5EF00A82D14 /* MedbookApp.swift */; };
+		FDBC165A2B30E5F200A82D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBC16592B30E5F200A82D14 /* Assets.xcassets */; };
+		FDBC165D2B30E5F200A82D14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBC165C2B30E5F200A82D14 /* Preview Assets.xcassets */; };
+		FDBC16672B30E5F200A82D14 /* MedbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16662B30E5F200A82D14 /* MedbookTests.swift */; };
+		FDBC16712B30E5F200A82D14 /* MedbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16702B30E5F200A82D14 /* MedbookUITests.swift */; };
+		FDBC16732B30E5F200A82D14 /* MedbookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16722B30E5F200A82D14 /* MedbookUITestsLaunchTests.swift */; };
+		FDBC16812B30E62A00A82D14 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16802B30E62A00A82D14 /* FontHelper.swift */; };
+		FDBC16832B30E65F00A82D14 /* BookListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16822B30E65F00A82D14 /* BookListingViewModel.swift */; };
+		FDBC16852B30E68500A82D14 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16842B30E68500A82D14 /* CustomImageView.swift */; };
+		FDBC16872B30E6A500A82D14 /* BookListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16862B30E6A500A82D14 /* BookListingView.swift */; };
+		FDBC16892B30E6CE00A82D14 /* AppLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16882B30E6CE00A82D14 /* AppLandingView.swift */; };
+		FDBC168E2B30E74600A82D14 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC168A2B30E74600A82D14 /* Montserrat-SemiBold.ttf */; };
+		FDBC168F2B30E74600A82D14 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC168B2B30E74600A82D14 /* Montserrat-Regular.ttf */; };
+		FDBC16902B30E74600A82D14 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC168C2B30E74600A82D14 /* Montserrat-Medium.ttf */; };
+		FDBC16912B30E74600A82D14 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC168D2B30E74600A82D14 /* Montserrat-Bold.ttf */; };
+		FDBC16942B30E8A400A82D14 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16932B30E8A400A82D14 /* SignUpView.swift */; };
+		FDBC16962B30E90900A82D14 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16952B30E90900A82D14 /* SignupViewModel.swift */; };
+		FDBC16982B30E9DA00A82D14 /* AppDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16972B30E9DA00A82D14 /* AppDataSource.swift */; };
+		FDBC16A52B30FF3700A82D14 /* BookListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16A42B30FF3700A82D14 /* BookListingModel.swift */; };
+		FDBC16A72B30FF9600A82D14 /* BookTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16A62B30FF9600A82D14 /* BookTileView.swift */; };
+		FDBC16A92B31576100A82D14 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16A82B31576100A82D14 /* LoginView.swift */; };
+		FDBC16AB2B31578600A82D14 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16AA2B31578600A82D14 /* LoginViewModel.swift */; };
+		FDBC16AD2B31586B00A82D14 /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16AC2B31586B00A82D14 /* CountriesModel.swift */; };
+		FDBC16B32B315B2900A82D14 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16B22B315B2900A82D14 /* BookDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDBC16632B30E5F200A82D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBC164A2B30E5EE00A82D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDBC16512B30E5EF00A82D14;
+			remoteInfo = Medbook;
+		};
+		FDBC166D2B30E5F200A82D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBC164A2B30E5EE00A82D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDBC16512B30E5EF00A82D14;
+			remoteInfo = Medbook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDBC16522B30E5EF00A82D14 /* Medbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBC16552B30E5EF00A82D14 /* MedbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedbookApp.swift; sourceTree = "<group>"; };
+		FDBC16592B30E5F200A82D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDBC165C2B30E5F200A82D14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDBC16622B30E5F200A82D14 /* MedbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBC16662B30E5F200A82D14 /* MedbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedbookTests.swift; sourceTree = "<group>"; };
+		FDBC166C2B30E5F200A82D14 /* MedbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBC16702B30E5F200A82D14 /* MedbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedbookUITests.swift; sourceTree = "<group>"; };
+		FDBC16722B30E5F200A82D14 /* MedbookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedbookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDBC16802B30E62A00A82D14 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		FDBC16822B30E65F00A82D14 /* BookListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListingViewModel.swift; sourceTree = "<group>"; };
+		FDBC16842B30E68500A82D14 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		FDBC16862B30E6A500A82D14 /* BookListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListingView.swift; sourceTree = "<group>"; };
+		FDBC16882B30E6CE00A82D14 /* AppLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLandingView.swift; sourceTree = "<group>"; };
+		FDBC168A2B30E74600A82D14 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FDBC168B2B30E74600A82D14 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FDBC168C2B30E74600A82D14 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		FDBC168D2B30E74600A82D14 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		FDBC16922B30E7A200A82D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FDBC16932B30E8A400A82D14 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FDBC16952B30E90900A82D14 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		FDBC16972B30E9DA00A82D14 /* AppDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataSource.swift; sourceTree = "<group>"; };
+		FDBC16A42B30FF3700A82D14 /* BookListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListingModel.swift; sourceTree = "<group>"; };
+		FDBC16A62B30FF9600A82D14 /* BookTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTileView.swift; sourceTree = "<group>"; };
+		FDBC16A82B31576100A82D14 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FDBC16AA2B31578600A82D14 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FDBC16AC2B31586B00A82D14 /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
+		FDBC16B22B315B2900A82D14 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDBC164F2B30E5EF00A82D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBC165F2B30E5F200A82D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBC16692B30E5F200A82D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDBC16492B30E5EE00A82D14 = {
+			isa = PBXGroup;
+			children = (
+				FDBC16542B30E5EF00A82D14 /* Medbook */,
+				FDBC16652B30E5F200A82D14 /* MedbookTests */,
+				FDBC166F2B30E5F200A82D14 /* MedbookUITests */,
+				FDBC16532B30E5EF00A82D14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDBC16532B30E5EF00A82D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16522B30E5EF00A82D14 /* Medbook.app */,
+				FDBC16622B30E5F200A82D14 /* MedbookTests.xctest */,
+				FDBC166C2B30E5F200A82D14 /* MedbookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDBC16542B30E5EF00A82D14 /* Medbook */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16AE2B315AFA00A82D14 /* BookDetail */,
+				FDBC169B2B30FE8F00A82D14 /* Landing */,
+				FDBC169A2B30FE8600A82D14 /* Login */,
+				FDBC16992B30FE7D00A82D14 /* BookListing */,
+				FDBC16A22B30FED900A82D14 /* Helpers */,
+				FDBC16552B30E5EF00A82D14 /* MedbookApp.swift */,
+				FDBC16922B30E7A200A82D14 /* Info.plist */,
+				FDBC16592B30E5F200A82D14 /* Assets.xcassets */,
+				FDBC165B2B30E5F200A82D14 /* Preview Content */,
+			);
+			path = Medbook;
+			sourceTree = "<group>";
+		};
+		FDBC165B2B30E5F200A82D14 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC165C2B30E5F200A82D14 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDBC16652B30E5F200A82D14 /* MedbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16662B30E5F200A82D14 /* MedbookTests.swift */,
+			);
+			path = MedbookTests;
+			sourceTree = "<group>";
+		};
+		FDBC166F2B30E5F200A82D14 /* MedbookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16702B30E5F200A82D14 /* MedbookUITests.swift */,
+				FDBC16722B30E5F200A82D14 /* MedbookUITestsLaunchTests.swift */,
+			);
+			path = MedbookUITests;
+			sourceTree = "<group>";
+		};
+		FDBC167F2B30E61B00A82D14 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC168D2B30E74600A82D14 /* Montserrat-Bold.ttf */,
+				FDBC168C2B30E74600A82D14 /* Montserrat-Medium.ttf */,
+				FDBC168B2B30E74600A82D14 /* Montserrat-Regular.ttf */,
+				FDBC168A2B30E74600A82D14 /* Montserrat-SemiBold.ttf */,
+				FDBC16802B30E62A00A82D14 /* FontHelper.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FDBC16992B30FE7D00A82D14 /* BookListing */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16A12B30FECC00A82D14 /* Model */,
+				FDBC16A02B30FEC800A82D14 /* View */,
+				FDBC169F2B30FEBC00A82D14 /* ViewModel */,
+			);
+			path = BookListing;
+			sourceTree = "<group>";
+		};
+		FDBC169A2B30FE8600A82D14 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC169E2B30FEA800A82D14 /* Model */,
+				FDBC169D2B30FEA300A82D14 /* View */,
+				FDBC169C2B30FE9B00A82D14 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FDBC169B2B30FE8F00A82D14 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16882B30E6CE00A82D14 /* AppLandingView.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		FDBC169C2B30FE9B00A82D14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16952B30E90900A82D14 /* SignupViewModel.swift */,
+				FDBC16AA2B31578600A82D14 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FDBC169D2B30FEA300A82D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16932B30E8A400A82D14 /* SignUpView.swift */,
+				FDBC16A82B31576100A82D14 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDBC169E2B30FEA800A82D14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16AC2B31586B00A82D14 /* CountriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDBC169F2B30FEBC00A82D14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16822B30E65F00A82D14 /* BookListingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FDBC16A02B30FEC800A82D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16862B30E6A500A82D14 /* BookListingView.swift */,
+				FDBC16A62B30FF9600A82D14 /* BookTileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDBC16A12B30FECC00A82D14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16A42B30FF3700A82D14 /* BookListingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDBC16A22B30FED900A82D14 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16A32B30FEE300A82D14 /* Common */,
+				FDBC167F2B30E61B00A82D14 /* Fonts */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FDBC16A32B30FEE300A82D14 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16972B30E9DA00A82D14 /* AppDataSource.swift */,
+				FDBC16842B30E68500A82D14 /* CustomImageView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FDBC16AE2B315AFA00A82D14 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16B12B315B0E00A82D14 /* View */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		FDBC16B12B315B0E00A82D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC16B22B315B2900A82D14 /* BookDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDBC16512B30E5EF00A82D14 /* Medbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDBC16762B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "Medbook" */;
+			buildPhases = (
+				FDBC164E2B30E5EF00A82D14 /* Sources */,
+				FDBC164F2B30E5EF00A82D14 /* Frameworks */,
+				FDBC16502B30E5EF00A82D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medbook;
+			productName = Medbook;
+			productReference = FDBC16522B30E5EF00A82D14 /* Medbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDBC16612B30E5F200A82D14 /* MedbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDBC16792B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "MedbookTests" */;
+			buildPhases = (
+				FDBC165E2B30E5F200A82D14 /* Sources */,
+				FDBC165F2B30E5F200A82D14 /* Frameworks */,
+				FDBC16602B30E5F200A82D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDBC16642B30E5F200A82D14 /* PBXTargetDependency */,
+			);
+			name = MedbookTests;
+			productName = MedbookTests;
+			productReference = FDBC16622B30E5F200A82D14 /* MedbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDBC166B2B30E5F200A82D14 /* MedbookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDBC167C2B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "MedbookUITests" */;
+			buildPhases = (
+				FDBC16682B30E5F200A82D14 /* Sources */,
+				FDBC16692B30E5F200A82D14 /* Frameworks */,
+				FDBC166A2B30E5F200A82D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDBC166E2B30E5F200A82D14 /* PBXTargetDependency */,
+			);
+			name = MedbookUITests;
+			productName = MedbookUITests;
+			productReference = FDBC166C2B30E5F200A82D14 /* MedbookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDBC164A2B30E5EE00A82D14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FDBC16512B30E5EF00A82D14 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FDBC16612B30E5F200A82D14 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FDBC16512B30E5EF00A82D14;
+					};
+					FDBC166B2B30E5F200A82D14 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FDBC16512B30E5EF00A82D14;
+					};
+				};
+			};
+			buildConfigurationList = FDBC164D2B30E5EE00A82D14 /* Build configuration list for PBXProject "Medbook" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDBC16492B30E5EE00A82D14;
+			productRefGroup = FDBC16532B30E5EF00A82D14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDBC16512B30E5EF00A82D14 /* Medbook */,
+				FDBC16612B30E5F200A82D14 /* MedbookTests */,
+				FDBC166B2B30E5F200A82D14 /* MedbookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDBC16502B30E5EF00A82D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBC168F2B30E74600A82D14 /* Montserrat-Regular.ttf in Resources */,
+				FDBC16902B30E74600A82D14 /* Montserrat-Medium.ttf in Resources */,
+				FDBC16912B30E74600A82D14 /* Montserrat-Bold.ttf in Resources */,
+				FDBC168E2B30E74600A82D14 /* Montserrat-SemiBold.ttf in Resources */,
+				FDBC165D2B30E5F200A82D14 /* Preview Assets.xcassets in Resources */,
+				FDBC165A2B30E5F200A82D14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBC16602B30E5F200A82D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBC166A2B30E5F200A82D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDBC164E2B30E5EF00A82D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBC16812B30E62A00A82D14 /* FontHelper.swift in Sources */,
+				FDBC16892B30E6CE00A82D14 /* AppLandingView.swift in Sources */,
+				FDBC16AD2B31586B00A82D14 /* CountriesModel.swift in Sources */,
+				FDBC16A72B30FF9600A82D14 /* BookTileView.swift in Sources */,
+				FDBC16962B30E90900A82D14 /* SignupViewModel.swift in Sources */,
+				FDBC16832B30E65F00A82D14 /* BookListingViewModel.swift in Sources */,
+				FDBC16942B30E8A400A82D14 /* SignUpView.swift in Sources */,
+				FDBC16B32B315B2900A82D14 /* BookDetailView.swift in Sources */,
+				FDBC16A92B31576100A82D14 /* LoginView.swift in Sources */,
+				FDBC16562B30E5EF00A82D14 /* MedbookApp.swift in Sources */,
+				FDBC16AB2B31578600A82D14 /* LoginViewModel.swift in Sources */,
+				FDBC16872B30E6A500A82D14 /* BookListingView.swift in Sources */,
+				FDBC16A52B30FF3700A82D14 /* BookListingModel.swift in Sources */,
+				FDBC16852B30E68500A82D14 /* CustomImageView.swift in Sources */,
+				FDBC16982B30E9DA00A82D14 /* AppDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBC165E2B30E5F200A82D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBC16672B30E5F200A82D14 /* MedbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBC16682B30E5F200A82D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBC16732B30E5F200A82D14 /* MedbookUITestsLaunchTests.swift in Sources */,
+				FDBC16712B30E5F200A82D14 /* MedbookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDBC16642B30E5F200A82D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDBC16512B30E5EF00A82D14 /* Medbook */;
+			targetProxy = FDBC16632B30E5F200A82D14 /* PBXContainerItemProxy */;
+		};
+		FDBC166E2B30E5F200A82D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDBC16512B30E5EF00A82D14 /* Medbook */;
+			targetProxy = FDBC166D2B30E5F200A82D14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FDBC16742B30E5F200A82D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDBC16752B30E5F200A82D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDBC16772B30E5F200A82D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medbook/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medbook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.Medbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDBC16782B30E5F200A82D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medbook/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medbook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.Medbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDBC167A2B30E5F200A82D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MedbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medbook.app/Medbook";
+			};
+			name = Debug;
+		};
+		FDBC167B2B30E5F200A82D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MedbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medbook.app/Medbook";
+			};
+			name = Release;
+		};
+		FDBC167D2B30E5F200A82D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MedbookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Medbook;
+			};
+			name = Debug;
+		};
+		FDBC167E2B30E5F200A82D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MedbookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Medbook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDBC164D2B30E5EE00A82D14 /* Build configuration list for PBXProject "Medbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBC16742B30E5F200A82D14 /* Debug */,
+				FDBC16752B30E5F200A82D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDBC16762B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "Medbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBC16772B30E5F200A82D14 /* Debug */,
+				FDBC16782B30E5F200A82D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDBC16792B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "MedbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBC167A2B30E5F200A82D14 /* Debug */,
+				FDBC167B2B30E5F200A82D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDBC167C2B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "MedbookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBC167D2B30E5F200A82D14 /* Debug */,
+				FDBC167E2B30E5F200A82D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDBC164A2B30E5EE00A82D14 /* Project object */;
+}
