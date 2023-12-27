@@ -9,8 +9,6 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    @State private var isSkipped: Bool = false
-    
     @ObservedObject var viewModel = SignupViewModel()
     
     var body: some View {
@@ -19,18 +17,19 @@ struct SignUpView: View {
             
             ZStack {
                 
-                NavigationLink("", destination: BookListingView(), isActive: $isSkipped)
+                NavigationLink("", destination: BookListingView(isOpen: $viewModel.isSkipped), isActive: $viewModel.isSkipped)
                 
                 mainView
                     .navigationBarBackButtonHidden(true)
                     .navigationBarTitle(Text(""), displayMode: .inline)
                     .navigationBarItems(trailing:
                                             Button(action: {
-                        self.isSkipped = true
+                        viewModel.isSkipped = true
                     }, label: {
                         Text("SKIP")
                     })
                     )
+                    .toast(isPresented: $viewModel.showToast, message: viewModel.toastMessage, type: viewModel.toastType)
             }
         }
         .navigationBarHidden(true)
@@ -80,19 +79,19 @@ struct SignUpView: View {
                 
                 Text("• At least 8 characters")
                     .font(.appFont(.medium, size: 12))
-                    .foregroundColor(viewModel.hasMinimumCharacters ? .green : .red)
+                    .textValidation(isValid: viewModel.hasMinimumCharacters)
                 
                 Text("• At least one number")
                     .font(.appFont(.medium, size: 12))
-                    .foregroundColor(viewModel.hasNumber ? .green : .red)
-                
+                    .textValidation(isValid: viewModel.hasNumber)
+
                 Text("• At least one uppercase letter")
                     .font(.appFont(.medium, size: 12))
-                    .foregroundColor(viewModel.hasUppercaseLetter ? .green : .red)
-                
+                    .textValidation(isValid: viewModel.hasUppercaseLetter)
+
                 Text("• At least one special character")
                     .font(.appFont(.medium, size: 12))
-                    .foregroundColor(viewModel.hasSpecialCharacter ? .green : .red)
+                    .textValidation(isValid: viewModel.hasSpecialCharacter)
             }
             
             if viewModel.countries.count > 0 {
@@ -109,7 +108,7 @@ struct SignUpView: View {
             
             
             Button {
-                //
+                viewModel.signupTapped()
             } label: {
                 Text("PROCEED")
                     .font(.appFont(.semiBold, size: 14))

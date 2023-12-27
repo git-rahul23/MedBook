@@ -14,6 +14,8 @@ struct AppLandingView: View {
     @State var isMoveToSignup: Bool = false
     @State var isMoveToLogin: Bool = false
     
+    @ObservedObject var viewModel = AppLandingViewModel()
+    
     var body: some View {
         
         NavigationView {
@@ -21,11 +23,12 @@ struct AppLandingView: View {
             ZStack {
                 NavigationLink("", destination: SignUpView(), isActive: $isMoveToSignup)
                 NavigationLink("", destination: LoginView(), isActive: $isMoveToLogin)
-
+                NavigationLink("", destination: BookListingView(isOpen: $viewModel.isLoggedIn), isActive: $viewModel.isLoggedIn)
+                
                 mainView
             }
         }
-       
+        
         
     }
     
@@ -39,35 +42,42 @@ struct AppLandingView: View {
             
             Spacer()
             
-            HStack {
-
-                Button {
-                    isMoveToSignup = true
-                } label: {
-                    Text("SIGNUP")
-                        .font(.appFont(.semiBold, size: 16))
-                        .foregroundColor(.black)
+            if viewModel.isChecking {
+                ProgressView("")
+                    .progressViewStyle(.circular)
+            } else {
+                if !viewModel.isLoggedIn {
+                    HStack {
+                        
+                        Button {
+                            isMoveToSignup = true
+                        } label: {
+                            Text("SIGNUP")
+                                .font(.appFont(.semiBold, size: 16))
+                                .foregroundColor(.black)
+                        }
+                        .frame(width: width/2, height: 42)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 7)
+                                .stroke(.gray, lineWidth: 1)
+                            
+                        }
+                        
+                        Button {
+                            isMoveToLogin = true
+                        } label: {
+                            Text("LOGIN")
+                                .font(.appFont(.semiBold, size: 16))
+                                .foregroundColor(.white)
+                        }
+                        .frame(width: width/2, height: 42)
+                        .background(Color.black)
+                        .cornerRadius(7)
+                        
+                    }
+                    .padding(.horizontal, 24)
                 }
-                .frame(width: width/2, height: 42)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 7)
-                        .stroke(.gray, lineWidth: 1)
-
-                }
-                
-                Button {
-                    isMoveToLogin = true
-                } label: {
-                    Text("LOGIN")
-                        .font(.appFont(.semiBold, size: 16))
-                        .foregroundColor(.white)
-                }
-                .frame(width: width/2, height: 42)
-                .background(Color.black)
-                .cornerRadius(7)
-
             }
-            .padding(.horizontal, 24)
         }
         .padding(.vertical, 48)
         .background(
@@ -75,7 +85,11 @@ struct AppLandingView: View {
         )
         .ignoresSafeArea(.all)
         .navigationBarHidden(true)
+        .onAppear {
+            viewModel.checkIfLoggedIn()
+        }
     }
+    
 }
 
 struct AppLandingView_Previews: PreviewProvider {
@@ -83,4 +97,3 @@ struct AppLandingView_Previews: PreviewProvider {
         AppLandingView()
     }
 }
-

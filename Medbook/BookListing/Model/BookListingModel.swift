@@ -12,13 +12,14 @@ struct BookListingModel: Codable {
 }
 
 struct Book: Codable, Equatable {
+    let key: String?
     let title: String?
     let ratingsAverage: Double?
     let ratingsCount, coverI: Int?
     let authorName: [String]?
 
     enum CodingKeys: String, CodingKey {
-        case title
+        case key, title
         case ratingsAverage = "ratings_average"
         case ratingsCount = "ratings_count"
         case coverI = "cover_i"

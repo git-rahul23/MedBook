@@ -26,7 +26,9 @@ enum BookSortOptions: String, CaseIterable {
 
 struct BookListingView: View {
     
-    @ObservedObject var viewModel = ViewModel()
+    @Binding var isOpen: Bool
+    
+    @ObservedObject var viewModel = BookListingViewModel()
     
     let width = (UIScreen.main.bounds.width - 56)*0.5
     
@@ -37,11 +39,37 @@ struct BookListingView: View {
             
             if viewModel.docs == nil {
                 
-                Spacer()
-                
-                Text("Start styping to find your favoutite books")
-                    .font(.appFont(.semiBold, size: 14))
-                    .foregroundColor(.gray.opacity(0.7))
+                if viewModel.recentSearches.count > 0 {
+                    VStack(alignment: .leading) {
+                        
+                        Text("RECENT SEARCHES :")
+                            .font(.appFont(.semiBold, size: 20))
+                        
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))]) {
+                            ForEach(0..<viewModel.recentSearches.count, id: \.self) { index in
+                                Text(viewModel.recentSearches[index])
+                                    .font(.appFont(.medium, size: 16))
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .overlay {
+                                        RoundedRectangle(cornerRadius: 7)
+                                            .stroke(.gray, lineWidth: 1)
+                                        
+                                    }
+                            }
+                        }
+                    }
+                    .padding(.top, 8)
+                    
+                   
+                } else {
+                    
+                    Spacer()
+                    
+                    Text("Start styping to find your favoutite books")
+                        .font(.appFont(.semiBold, size: 14))
+                        .foregroundColor(.gray.opacity(0.7))
+                }
                 
                 Spacer()
                 
@@ -57,28 +85,45 @@ struct BookListingView: View {
     
     var searchFiedlView: some View {
         HStack {
-            
-            Image(systemName: "magnifyingglass")
-            
-            TextField("Search Bond", text: $viewModel.searchString)
-            
-            if !viewModel.searchString.isEmpty {
-                Button {
-                    viewModel.searchString = ""
-                } label: {
-                    Image(systemName: "clear")
-                        .renderingMode(.template)
-                        .foregroundColor(.black)
+            HStack {
+                
+                Image(systemName: "magnifyingglass")
+                
+                TextField("Search Book", text: $viewModel.searchString)
+                
+                if !viewModel.searchString.isEmpty {
+                    Button {
+                        viewModel.docs?.removeAll()
+                        viewModel.searchString = ""
+                    } label: {
+                        Image(systemName: "clear")
+                    }
                 }
+                
+                
+            }
+            .padding(.all, 8)
+            .overlay {
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(Color.gray, lineWidth: 1)
             }
             
+            NavigationLink {
+                BookMarksView()
+            } label: {
+                Image(systemName: "bookmark.fill")
+            }
             
-        }
-        .padding(.all, 8)
-        .background(Color.white)
-        .overlay {
-            RoundedRectangle(cornerRadius: 4)
-                .stroke(Color.gray, lineWidth: 1)
+            if UserDefaultHelper.isLoggedIn() {
+                Button {
+                    UserDefaultHelper.setLoggedIn(false)
+                    isOpen = false
+                } label: {
+                    Image(systemName: "person.badge.minus")
+                }
+
+            }
+
         }
     }
     
@@ -119,12 +164,17 @@ struct BookListingView: View {
                                 
                                 
                                 // add nav link to proceed to book detail
-                                BookTileView(book: book)
-                                    .onAppear {
-                                        if book == docs.last {
-                                            viewModel.loadMore()
+                                NavigationLink {
+                                    BookDetailView(book: book)
+                                } label: {
+                                    BookTileView(book: book)
+                                        .onAppear {
+                                            if book == docs.last {
+                                                viewModel.loadMore()
+                                            }
                                         }
-                                    }
+                                }
+
                                 
                             }
                         }
@@ -138,4 +188,3 @@ struct BookListingView: View {
         }
     }
 }
-

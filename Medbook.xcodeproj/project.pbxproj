@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73FF1ACA5123C428DD706E40 /* Pods_Medbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48574C1D949696A52BD6BBB3 /* Pods_Medbook.framework */; };
+		827EC00940A5CAE6497858C7 /* Pods_Medbook_MedbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574570C54E53447077547454 /* Pods_Medbook_MedbookUITests.framework */; };
+		CFE4FF868832F5E76B135962 /* Pods_MedbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1232308C584FB0470C9FF083 /* Pods_MedbookTests.framework */; };
+		FD7184012B3BEDE100383FCF /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184002B3BEDE100383FCF /* BookDetailViewModel.swift */; };
+		FD7184042B3BEED800383FCF /* BookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184032B3BEED800383FCF /* BookDetailModel.swift */; };
+		FD7184072B3BF64C00383FCF /* Medbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD7184052B3BF64C00383FCF /* Medbook.xcdatamodeld */; };
+		FD71840A2B3BF95800383FCF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184092B3BF95800383FCF /* PersistenceController.swift */; };
+		FD71840C2B3BFBD000383FCF /* AppToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71840B2B3BFBD000383FCF /* AppToast.swift */; };
+		FD71840E2B3C00BB00383FCF /* View_Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71840D2B3C00BB00383FCF /* View_Extentions.swift */; };
+		FD7184112B3C076600383FCF /* AppLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184102B3C076600383FCF /* AppLandingViewModel.swift */; };
+		FD7184162B3C09F200383FCF /* BookMarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184152B3C09F200383FCF /* BookMarksView.swift */; };
+		FD7184182B3C135F00383FCF /* BookMarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184172B3C135F00383FCF /* BookMarksViewModel.swift */; };
+		FD71841A2B3C24F900383FCF /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7184192B3C24F900383FCF /* UserDefaultHelper.swift */; };
 		FDBC16562B30E5EF00A82D14 /* MedbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC16552B30E5EF00A82D14 /* MedbookApp.swift */; };
 		FDBC165A2B30E5F200A82D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBC16592B30E5F200A82D14 /* Assets.xcassets */; };
 		FDBC165D2B30E5F200A82D14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBC165C2B30E5F200A82D14 /* Preview Assets.xcassets */; };
@@ -51,6 +64,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4A36F3FE38A95B129D7FAA /* Pods-MedbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedbookTests.release.xcconfig"; path = "Target Support Files/Pods-MedbookTests/Pods-MedbookTests.release.xcconfig"; sourceTree = "<group>"; };
+		1232308C584FB0470C9FF083 /* Pods_MedbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21374201BAA48C07F26D8D57 /* Pods-Medbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medbook.release.xcconfig"; path = "Target Support Files/Pods-Medbook/Pods-Medbook.release.xcconfig"; sourceTree = "<group>"; };
+		36EFC18A8F4C74E9726F1C9C /* Pods-Medbook-MedbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medbook-MedbookUITests.release.xcconfig"; path = "Target Support Files/Pods-Medbook-MedbookUITests/Pods-Medbook-MedbookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48574C1D949696A52BD6BBB3 /* Pods_Medbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574570C54E53447077547454 /* Pods_Medbook_MedbookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medbook_MedbookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A9A94A07BB7BF8C5237791 /* Pods-MedbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedbookTests.debug.xcconfig"; path = "Target Support Files/Pods-MedbookTests/Pods-MedbookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD546C583E2E0FC790137D75 /* Pods-Medbook-MedbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medbook-MedbookUITests.debug.xcconfig"; path = "Target Support Files/Pods-Medbook-MedbookUITests/Pods-Medbook-MedbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7CB976E88084CCA7E657749 /* Pods-Medbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medbook.debug.xcconfig"; path = "Target Support Files/Pods-Medbook/Pods-Medbook.debug.xcconfig"; sourceTree = "<group>"; };
+		FD7184002B3BEDE100383FCF /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
+		FD7184032B3BEED800383FCF /* BookDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailModel.swift; sourceTree = "<group>"; };
+		FD7184062B3BF64C00383FCF /* Medbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medbook.xcdatamodel; sourceTree = "<group>"; };
+		FD7184092B3BF95800383FCF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		FD71840B2B3BFBD000383FCF /* AppToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToast.swift; sourceTree = "<group>"; };
+		FD71840D2B3C00BB00383FCF /* View_Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_Extentions.swift; sourceTree = "<group>"; };
+		FD7184102B3C076600383FCF /* AppLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLandingViewModel.swift; sourceTree = "<group>"; };
+		FD7184152B3C09F200383FCF /* BookMarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarksView.swift; sourceTree = "<group>"; };
+		FD7184172B3C135F00383FCF /* BookMarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarksViewModel.swift; sourceTree = "<group>"; };
+		FD7184192B3C24F900383FCF /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		FDBC16522B30E5EF00A82D14 /* Medbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBC16552B30E5EF00A82D14 /* MedbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedbookApp.swift; sourceTree = "<group>"; };
 		FDBC16592B30E5F200A82D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FF1ACA5123C428DD706E40 /* Pods_Medbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE4FF868832F5E76B135962 /* Pods_MedbookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +134,94 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827EC00940A5CAE6497858C7 /* Pods_Medbook_MedbookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F1266B4EF7CD8197AF85351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48574C1D949696A52BD6BBB3 /* Pods_Medbook.framework */,
+				574570C54E53447077547454 /* Pods_Medbook_MedbookUITests.framework */,
+				1232308C584FB0470C9FF083 /* Pods_MedbookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E97F6C4C79EEA39D75BA5E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7CB976E88084CCA7E657749 /* Pods-Medbook.debug.xcconfig */,
+				21374201BAA48C07F26D8D57 /* Pods-Medbook.release.xcconfig */,
+				CD546C583E2E0FC790137D75 /* Pods-Medbook-MedbookUITests.debug.xcconfig */,
+				36EFC18A8F4C74E9726F1C9C /* Pods-Medbook-MedbookUITests.release.xcconfig */,
+				76A9A94A07BB7BF8C5237791 /* Pods-MedbookTests.debug.xcconfig */,
+				0B4A36F3FE38A95B129D7FAA /* Pods-MedbookTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD7183FF2B3BEDCC00383FCF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184002B3BEDE100383FCF /* BookDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD7184022B3BEECA00383FCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184032B3BEED800383FCF /* BookDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD7184082B3BF94300383FCF /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184092B3BF95800383FCF /* PersistenceController.swift */,
+				FD7184052B3BF64C00383FCF /* Medbook.xcdatamodeld */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+		FD71840F2B3C075300383FCF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184102B3C076600383FCF /* AppLandingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD7184122B3C09C400383FCF /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184142B3C09DB00383FCF /* ViewModel */,
+				FD7184132B3C09CD00383FCF /* View */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		FD7184132B3C09CD00383FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184152B3C09F200383FCF /* BookMarksView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD7184142B3C09DB00383FCF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD7184172B3C135F00383FCF /* BookMarksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FDBC16492B30E5EE00A82D14 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +229,8 @@
 				FDBC16652B30E5F200A82D14 /* MedbookTests */,
 				FDBC166F2B30E5F200A82D14 /* MedbookUITests */,
 				FDBC16532B30E5EF00A82D14 /* Products */,
+				7E97F6C4C79EEA39D75BA5E3 /* Pods */,
+				5F1266B4EF7CD8197AF85351 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +247,8 @@
 		FDBC16542B30E5EF00A82D14 /* Medbook */ = {
 			isa = PBXGroup;
 			children = (
+				FD7184122B3C09C400383FCF /* Bookmarks */,
+				FD7184082B3BF94300383FCF /* CoreDataHelper */,
 				FDBC16AE2B315AFA00A82D14 /* BookDetail */,
 				FDBC169B2B30FE8F00A82D14 /* Landing */,
 				FDBC169A2B30FE8600A82D14 /* Login */,
@@ -202,6 +322,7 @@
 		FDBC169B2B30FE8F00A82D14 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
+				FD71840F2B3C075300383FCF /* ViewModel */,
 				FDBC16882B30E6CE00A82D14 /* AppLandingView.swift */,
 			);
 			path = Landing;
@@ -272,6 +393,9 @@
 			children = (
 				FDBC16972B30E9DA00A82D14 /* AppDataSource.swift */,
 				FDBC16842B30E68500A82D14 /* CustomImageView.swift */,
+				FD71840B2B3BFBD000383FCF /* AppToast.swift */,
+				FD71840D2B3C00BB00383FCF /* View_Extentions.swift */,
+				FD7184192B3C24F900383FCF /* UserDefaultHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -279,6 +403,8 @@
 		FDBC16AE2B315AFA00A82D14 /* BookDetail */ = {
 			isa = PBXGroup;
 			children = (
+				FD7184022B3BEECA00383FCF /* Model */,
+				FD7183FF2B3BEDCC00383FCF /* ViewModel */,
 				FDBC16B12B315B0E00A82D14 /* View */,
 			);
 			path = BookDetail;
@@ -299,6 +425,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDBC16762B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "Medbook" */;
 			buildPhases = (
+				58491F0BDC50E2C6EA7DDB46 /* [CP] Check Pods Manifest.lock */,
 				FDBC164E2B30E5EF00A82D14 /* Sources */,
 				FDBC164F2B30E5EF00A82D14 /* Frameworks */,
 				FDBC16502B30E5EF00A82D14 /* Resources */,
@@ -316,6 +443,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDBC16792B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "MedbookTests" */;
 			buildPhases = (
+				C2FD3C509EE5911F7A152FD7 /* [CP] Check Pods Manifest.lock */,
 				FDBC165E2B30E5F200A82D14 /* Sources */,
 				FDBC165F2B30E5F200A82D14 /* Frameworks */,
 				FDBC16602B30E5F200A82D14 /* Resources */,
@@ -334,6 +462,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDBC167C2B30E5F200A82D14 /* Build configuration list for PBXNativeTarget "MedbookUITests" */;
 			buildPhases = (
+				51A4DB43460FD3E29CCDBEE7 /* [CP] Check Pods Manifest.lock */,
 				FDBC16682B30E5F200A82D14 /* Sources */,
 				FDBC16692B30E5F200A82D14 /* Frameworks */,
 				FDBC166A2B30E5F200A82D14 /* Resources */,
@@ -421,25 +550,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51A4DB43460FD3E29CCDBEE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Medbook-MedbookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58491F0BDC50E2C6EA7DDB46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Medbook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2FD3C509EE5911F7A152FD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedbookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDBC164E2B30E5EF00A82D14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7184112B3C076600383FCF /* AppLandingViewModel.swift in Sources */,
 				FDBC16812B30E62A00A82D14 /* FontHelper.swift in Sources */,
 				FDBC16892B30E6CE00A82D14 /* AppLandingView.swift in Sources */,
 				FDBC16AD2B31586B00A82D14 /* CountriesModel.swift in Sources */,
+				FD71840E2B3C00BB00383FCF /* View_Extentions.swift in Sources */,
+				FD7184162B3C09F200383FCF /* BookMarksView.swift in Sources */,
+				FD7184042B3BEED800383FCF /* BookDetailModel.swift in Sources */,
 				FDBC16A72B30FF9600A82D14 /* BookTileView.swift in Sources */,
+				FD71840C2B3BFBD000383FCF /* AppToast.swift in Sources */,
 				FDBC16962B30E90900A82D14 /* SignupViewModel.swift in Sources */,
 				FDBC16832B30E65F00A82D14 /* BookListingViewModel.swift in Sources */,
 				FDBC16942B30E8A400A82D14 /* SignUpView.swift in Sources */,
 				FDBC16B32B315B2900A82D14 /* BookDetailView.swift in Sources */,
 				FDBC16A92B31576100A82D14 /* LoginView.swift in Sources */,
 				FDBC16562B30E5EF00A82D14 /* MedbookApp.swift in Sources */,
+				FD7184072B3BF64C00383FCF /* Medbook.xcdatamodeld in Sources */,
+				FD7184182B3C135F00383FCF /* BookMarksViewModel.swift in Sources */,
 				FDBC16AB2B31578600A82D14 /* LoginViewModel.swift in Sources */,
+				FD71840A2B3BF95800383FCF /* PersistenceController.swift in Sources */,
 				FDBC16872B30E6A500A82D14 /* BookListingView.swift in Sources */,
 				FDBC16A52B30FF3700A82D14 /* BookListingModel.swift in Sources */,
+				FD71841A2B3C24F900383FCF /* UserDefaultHelper.swift in Sources */,
 				FDBC16852B30E68500A82D14 /* CustomImageView.swift in Sources */,
+				FD7184012B3BEDE100383FCF /* BookDetailViewModel.swift in Sources */,
 				FDBC16982B30E9DA00A82D14 /* AppDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +801,7 @@
 		};
 		FDBC16772B30E5F200A82D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CB976E88084CCA7E657749 /* Pods-Medbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -607,6 +816,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +832,7 @@
 		};
 		FDBC16782B30E5F200A82D14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21374201BAA48C07F26D8D57 /* Pods-Medbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -636,6 +847,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -651,6 +863,7 @@
 		};
 		FDBC167A2B30E5F200A82D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A9A94A07BB7BF8C5237791 /* Pods-MedbookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -670,6 +883,7 @@
 		};
 		FDBC167B2B30E5F200A82D14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4A36F3FE38A95B129D7FAA /* Pods-MedbookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -689,6 +903,7 @@
 		};
 		FDBC167D2B30E5F200A82D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD546C583E2E0FC790137D75 /* Pods-Medbook-MedbookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -706,6 +921,7 @@
 		};
 		FDBC167E2B30E5F200A82D14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36EFC18A8F4C74E9726F1C9C /* Pods-Medbook-MedbookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -761,6 +977,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD7184052B3BF64C00383FCF /* Medbook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD7184062B3BF64C00383FCF /* Medbook.xcdatamodel */,
+			);
+			currentVersion = FD7184062B3BF64C00383FCF /* Medbook.xcdatamodel */;
+			path = Medbook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FDBC164A2B30E5EE00A82D14 /* Project object */;
 }

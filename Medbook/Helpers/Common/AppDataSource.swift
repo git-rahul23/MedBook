@@ -24,6 +24,18 @@ struct ContentDataSource {
         }
     }
     
+    func fetchBookDetil(key: String) async -> Result<BookDetailModel?, Error> {
+        
+        let urlRequest = URLRequest(url: URL(string: "https://openlibrary.org\(key).json")!)
+        
+        do {
+            let data = try await self.performOperation(request: urlRequest, response: BookDetailModel.self)
+            return .success(data)
+        } catch {
+            return .failure(error)
+        }
+    }
+    
     func fetchCountries() async -> Result<CountriesModel?, Error> {
         
         let urlRequest = URLRequest(url: URL(string: "https://api.first.org/data/v1/countries")!)

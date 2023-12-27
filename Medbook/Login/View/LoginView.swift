@@ -9,8 +9,6 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var isSkipped: Bool = false
-    
     @ObservedObject var viewModel = LoginViewModel()
     
     var body: some View {
@@ -19,18 +17,19 @@ struct LoginView: View {
             
             ZStack {
                 
-                NavigationLink("", destination: BookListingView(), isActive: $isSkipped)
+                NavigationLink("", destination: BookListingView(isOpen: $viewModel.isSkipped), isActive: $viewModel.isSkipped)
                 
                 mainView
                     .navigationBarBackButtonHidden(true)
                     .navigationBarTitle(Text(""), displayMode: .inline)
                     .navigationBarItems(trailing:
                                             Button(action: {
-                        self.isSkipped = true
+                        viewModel.isSkipped = true
                     }, label: {
                         Text("SKIP")
                     })
                     )
+                    .toast(isPresented: $viewModel.showToast, message: viewModel.toastMessage, type: viewModel.toastType)
             }
         }
         .navigationBarHidden(true)
@@ -70,7 +69,7 @@ struct LoginView: View {
             
             
             Button {
-                //
+                viewModel.loginTapped()
             } label: {
                 Text("PROCEED")
                     .font(.appFont(.semiBold, size: 14))
